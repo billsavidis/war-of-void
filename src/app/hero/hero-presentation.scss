@@ -1,0 +1,15 @@
+.heroPresentationGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.heroCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 60px;
+  border: 1px solid black;
+}
