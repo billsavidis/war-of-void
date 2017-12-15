@@ -1,3 +1,5 @@
+@import '~scss/styles';
+
 .heroPresentationGrid {
   display: flex;
   flex-direction: row;
@@ -5,11 +7,12 @@
 }
 
 .heroCard {
+  @include heroCard($backgroundColor: lightblue, $width: 180px, $height: 120px);
+}
+
+.statistics {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 60px;
-  border: 1px solid black;
+  padding: 8px;
 }

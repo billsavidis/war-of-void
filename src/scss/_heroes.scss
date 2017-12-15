@@ -1,0 +1,19 @@
+@mixin heroCard($backgroundColor: white, $width: 120px, $height: 60px,
+  $borderWidth: 1px, $borderColor: black, $color: black, $cursor: pointer
+) {
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  width: $width;
+  height: $height;
+  border: $borderWidth solid $borderColor;
+  color: $color;
+  cursor: $cursor;
+
+  &:hover {
+    background-color: complement($backgroundColor);
+  }
+}

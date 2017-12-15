@@ -1,5 +1,10 @@
 <div class='heroPresentationGrid'>
   <div class='heroCard' *ngFor='let hero of heroes'>
     <span>{{hero.name}}</span>
+    <div class='statistics'>
+      <span>Health: {{hero.health}}</span>
+      <span>Attack: {{hero.attack}}</span>
+      <span>Defense: {{hero.defense}}</span>
+    </div>
   </div>
 </div>
