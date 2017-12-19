@@ -15,13 +15,24 @@ export class HeroPresentationComponent implements OnInit {
     private heroManagerService: HeroManagerService,
   ) { }
 
-  heroes: Hero[];
+  selectHeroText = 'Select hero!';
 
-  fetchHeroes(): void {
+  heroes: Hero[];
+  selectedHero: Hero;
+
+  fetchHeroes = (): void => {
     this.heroes = this.heroManagerService.createHeroes();
   }
 
   ngOnInit(): void {
-    this.fetchHeroes()
+    this.fetchHeroes();
   };
+
+  selectHero = (hero: Hero): void => {
+    this.selectedHero = hero;
+  };
+
+  confirmSelection = (): void => {
+    console.log('You have selected', this.selectedHero.name);
+  }
 }

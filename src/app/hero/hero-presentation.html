@@ -1,5 +1,7 @@
 <div class='heroPresentationGrid'>
-  <div class='heroCard' *ngFor='let hero of heroes'>
+  <div *ngFor='let hero of heroes' class='heroCard'
+    [class.heroSelected]='hero === selectedHero'
+    (click)='selectHero(hero)'>
     <span>{{hero.name}}</span>
     <div class='statistics'>
       <span>Health: {{hero.health}}</span>
@@ -8,3 +10,8 @@
     </div>
   </div>
 </div>
+<button class='heroSelectedButton'
+  [disabled]='!selectedHero'
+  (click)='confirmSelection()'>
+  {{selectHeroText}}
+</button>

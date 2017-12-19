@@ -12,6 +12,14 @@
   box-sizing: border-box;
 }
 
+.heroPresentationBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 32px;
+  box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
   .applicationBody {
     padding: 0px 16px;
@@ -19,6 +27,10 @@
 
   .welcomeMessage {
     padding: 16px;
+  }
+
+  .heroPresentationBox {
+    padding: 0px 16px;
   }
 }
 
@@ -29,5 +41,9 @@
 
   .welcomeMessage {
     padding: 8px;
+  }
+
+  .heroPresentationBox {
+    padding: 0px 8px;
   }
 }
