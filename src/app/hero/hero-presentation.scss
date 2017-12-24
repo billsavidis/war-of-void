@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 .heroCard {
@@ -19,7 +20,9 @@
 }
 
 .heroSelectedButton {
-  
+  width: 128px;
+  padding: 8px;
+  margin: 8px;
 }
 
 .statistics {

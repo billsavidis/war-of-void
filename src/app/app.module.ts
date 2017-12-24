@@ -7,6 +7,8 @@ import { HeroPresentationComponent } from './hero/hero-presentation';
 
 import { HeroManagerService } from './hero/hero-manager';
 
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +17,7 @@ import { HeroManagerService } from './hero/hero-manager';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
   ],
   providers: [
     HeroManagerService,

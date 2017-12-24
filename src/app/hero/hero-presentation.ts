@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { HeroManagerService } from './hero-manager';
 
@@ -13,6 +14,7 @@ import { Hero } from './hero';
 export class HeroPresentationComponent implements OnInit {
   constructor(
     private heroManagerService: HeroManagerService,
+    private router: Router,
   ) { }
 
   selectHeroText = 'Select hero!';
@@ -34,5 +36,6 @@ export class HeroPresentationComponent implements OnInit {
 
   confirmSelection = (): void => {
     console.log('You have selected', this.selectedHero.name);
+    this.router.navigate(['/battle']);
   }
 }
