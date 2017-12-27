@@ -18,7 +18,7 @@
 }
 
 .heroCard {
-  @include heroCard($backgroundColor: lightblue, $width: 180px, $height: 120px);
+  @include heroCard($backgroundColor: lightblue);
 }
 
 .heroSelected {
@@ -29,9 +29,7 @@
 }
 
 .heroSelectedButton {
-  width: 128px;
-  padding: 8px;
-  margin: 8px;
+  @include button();
 }
 
 .statistics {

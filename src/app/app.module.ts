@@ -7,7 +7,6 @@ import { HeroChoiceComponent } from './heroChoice/hero-choice';
 import { BattleComponent } from './battle/battle';
 
 import { HeroManagerService } from './hero/hero-manager';
-import { Hero } from './hero/hero';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -24,7 +23,6 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   providers: [
     HeroManagerService,
-    Hero,
   ],
   bootstrap: [
     AppComponent,

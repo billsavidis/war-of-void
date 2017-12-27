@@ -14,9 +14,24 @@ export class BattleComponent implements OnInit {
     private heroManagerService: HeroManagerService,
   ) { }
 
+  attack = 'Attaaaaaack!';
+  defend = 'Defend...';
+  regenerate = 'I need some rest...';
   selectedHero: Hero;
 
   ngOnInit(): void {
     this.selectedHero = this.heroManagerService.selectedHero;
   };
+
+  onAttack(): void {
+    console.log('Attacked');
+  }
+
+  onDefend(): void {
+    console.log('Defended');
+  }
+
+  onRegenerate(): void {
+    console.log('Regenerated');
+  }
 }

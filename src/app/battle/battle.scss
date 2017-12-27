@@ -1,6 +1,27 @@
+@import '~scss/styles';
+
 .battleBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.heroCard {
+  @include heroCard($backgroundColor: lightblue, $cursor: default);
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.buttonsBox {
+  display: flex;
+}
+
+.button {
+  @include button();
 }

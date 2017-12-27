@@ -1,3 +1,15 @@
 <div class='battleBox'>
-  Battle
+  <div class='heroCard'>
+    <span>{{selectedHero.name}}</span>
+    <div class='statistics'>
+      <span>Health: {{selectedHero.health}}</span>
+      <span>Attack: {{selectedHero.attack}}</span>
+      <span>Defense: {{selectedHero.defense}}</span>
+    </div>
+  </div>
+  <div class='buttonsBox'>
+    <button class='button' (click)='onAttack()'>{{attack}}</button>
+    <button class='button' (click)='onDefend()'>{{defend}}</button>
+    <button class='button' (click)='onRegenerate()'>{{regenerate}}</button>
+  </div>
 </div>
