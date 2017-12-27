@@ -32,6 +32,7 @@ export class HeroChoiceComponent implements OnInit {
 
   selectHero = (hero: Hero): void => {
     this.selectedHero = hero;
+    this.heroManagerService.setSelectedHero(hero);
   };
 
   confirmSelection = (): void => {
