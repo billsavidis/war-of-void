@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header';
-import { HeroPresentationComponent } from './hero/hero-presentation';
+import { HeroChoiceComponent } from './heroChoice/hero-choice';
+import { BattleComponent } from './battle/battle';
 
 import { HeroManagerService } from './hero/hero-manager';
 
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    HeroPresentationComponent,
+    HeroChoiceComponent,
+    BattleComponent,
   ],
   imports: [
     BrowserModule,

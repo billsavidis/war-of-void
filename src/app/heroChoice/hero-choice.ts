@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { HeroManagerService } from './hero-manager';
+import { HeroManagerService } from '../hero/hero-manager';
 
-import { Hero } from './hero';
+import { Hero } from '../hero/hero';
 
 @Component({
-  selector: 'hero-presentation',
-  templateUrl: './hero-presentation.html',
-  styleUrls: ['./hero-presentation.scss']
+  selector: 'hero-choice',
+  templateUrl: './hero-choice.html',
+  styleUrls: ['./hero-choice.scss']
 })
-export class HeroPresentationComponent implements OnInit {
+export class HeroChoiceComponent implements OnInit {
   constructor(
     private heroManagerService: HeroManagerService,
     private router: Router,
@@ -35,7 +35,6 @@ export class HeroPresentationComponent implements OnInit {
   };
 
   confirmSelection = (): void => {
-    console.log('You have selected', this.selectedHero.name);
     this.router.navigate(['/battle']);
   }
 }

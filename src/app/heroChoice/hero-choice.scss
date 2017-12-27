@@ -1,6 +1,15 @@
 @import '~scss/styles';
 
-.heroPresentationGrid {
+.heroPresentationBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px 32px;
+  box-sizing: border-box;
+}
+
+.heroChoiceGrid {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -30,4 +39,16 @@
   flex-direction: column;
   align-items: center;
   padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .heroPresentationBox {
+    padding: 0px 16px;
+  }
+}
+
+@media (max-width: 414px) {
+  .heroPresentationBox {
+    padding: 0px 8px;
+  }
 }
