@@ -12,4 +12,12 @@
     <button class='button' (click)='onDefend()'>{{defend}}</button>
     <button class='button' (click)='onRegenerate()'>{{regenerate}}</button>
   </div>
+  <div class='heroCard'>
+    <span>{{opponentHero.name}}</span>
+    <div class='statistics'>
+      <span>Health: {{opponentHero.health}}</span>
+      <span>Attack: {{opponentHero.attack}}</span>
+      <span>Defense: {{opponentHero.defense}}</span>
+    </div>
+  </div>
 </div>

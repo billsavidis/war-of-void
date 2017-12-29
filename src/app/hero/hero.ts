@@ -4,4 +4,7 @@ export class Hero {
   health: number;
   attack: number;
   defense: number;
+  strength: number;
+  concentration: number;
+  wisdom: number;
 }
